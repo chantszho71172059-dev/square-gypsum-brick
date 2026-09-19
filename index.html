@@ -17,7 +17,6 @@
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Microsoft JhengHei", sans-serif;
         }
 
-        /* 網頁環保建築主題背景：採用淡雅綠色幾何幾何線條與漸層組合，完美適配電腦與手機 */
         body {
             background-color: #f4faf6;
             background-image: 
@@ -34,7 +33,6 @@
             margin: 0 auto;
         }
 
-        /* 1. 頂部公司 LOGO 區 */
         .header-logo {
             background: var(--pure-white);
             padding: 20px;
@@ -54,7 +52,6 @@
             display: block;
         }
 
-        /* 文案大標題 */
         .title-banner {
             text-align: center;
             margin-bottom: 30px;
@@ -75,11 +72,10 @@
             font-weight: 500;
         }
 
-        /* 2. 核心圖片展示區 */
         .image-gallery {
             display: flex;
             flex-direction: column;
-            gap: 25px; /* 圖片之間的間距 */
+            gap: 25px;
             margin-bottom: 40px;
         }
 
@@ -89,10 +85,8 @@
             border-radius: 16px;
             box-shadow: 0 6px 20px rgba(0,0,0,0.04);
             border: 1px solid rgba(0, 0, 0, 0.05);
-            transition: transform 0.2s;
         }
 
-        /* 響應式圖片：電腦上並排或大圖，手機上自動縮放不變形 */
         .image-card img {
             width: 100%;
             height: auto;
@@ -100,7 +94,6 @@
             border-radius: 8px;
         }
 
-        /* 3. 最下方聯繫方式與電郵 */
         .footer-contact {
             background: #1A202C;
             color: #E2E8F0;
@@ -143,7 +136,7 @@
         }
 
         .btn-whatsapp {
-            background-color: #25D366; /* WhatsApp 官方綠色 */
+            background-color: #25D366;
             color: white;
             box-shadow: 0 4px 14px rgba(37, 211, 102, 0.4);
         }
@@ -169,7 +162,7 @@
 
     <!-- 頂部公司 LOGO -->
     <header class="header-logo">
-        <img src="logo.png" alt="創正新型材料有限公司 KITSQUARE ENGINEERING LIMITED">
+        <img src="logo.png" alt="創正新型材料有限公司">
     </header>
 
     <!-- 文案標題 -->
@@ -178,22 +171,22 @@
         <p>質量優越，引領綠色建造</p>
     </div>
 
-    <!-- 中間：5張圖片垂直順序排列（電腦端、手機端皆能完美高清放大顯示） -->
+    <!-- 中間：5張圖片垂直順序排列（皆讀取 .png 格式） -->
     <main class="image-gallery">
         <div class="image-card">
-            <img src="image5.jpg" alt="建造業議會 CIC 綠色產品認證 鉑金評級">
+            <img src="image5.png" alt="建造業議會 CIC 綠色產品認證 鉑金評級">
         </div>
         <div class="image-card">
-            <img src="image1.jpg" alt="石膏磚產品型號與尺寸規格">
+            <img src="image1.png" alt="石膏磚產品型號與尺寸規格">
         </div>
         <div class="image-card">
-            <img src="image4.jpg" alt="BS 5234 英國標準結構強度檢驗表">
+            <img src="image4.png" alt="BS 5234 英國標準結構強度檢驗表">
         </div>
         <div class="image-card">
-            <img src="image3.jpg" alt="專用配套輔料施工參數說明">
+            <img src="image3.png" alt="專用配套輔料施工參數說明">
         </div>
         <div class="image-card">
-            <img src="image2.jpg" alt="創正石膏黏接劑與膩子規格對比">
+            <img src="image2.png" alt="創正石膏黏接劑與膩子規格對比">
         </div>
     </main>
 
@@ -203,11 +196,9 @@
         <p>歡迎隨時聯絡我們，索取樣品或諮詢綠色建築建材方案。</p>
         
         <div class="contact-box">
-            <!-- 手機點擊可直接聯絡 WhatsApp -->
             <a href="https://wa.me" class="contact-btn btn-whatsapp" target="_blank">
                 💬 WhatsApp 聯絡: 67434046
             </a>
-            <!-- 點擊可直接開啟寫信電郵 -->
             <a href="mailto:chuangzheng0507@yahoo.com" class="contact-btn btn-email">
                 ✉️ 電郵聯絡: chuangzheng0507@yahoo.com
             </a>
