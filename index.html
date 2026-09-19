@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>創正石膏磚 - 質量優越，引領綠色建造</title>
+    <style>
+        /* --- 核心環保網頁風格與變數設定 --- */
+        :root {
+            --primary-green: #2E7D32;    /* 永續深綠色 */
+            --eco-light-green: #E8F5E9; /* 莫蘭迪環保淺綠 */
+            --platinum-silver: #718096; /* 鉑金認證灰 */
+            --text-dark: #2D3748;       /* 內文深灰 */
+            --pure-white: #FFFFFF;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Microsoft JhengHei", sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5fcf7 0%, #edf7f1 100%);
+            color: var(--text-dark);
+            line-height: 1.6;
+            padding: 20px 10px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* --- 1. 頂部導覽列與 LOGO 區 --- */
+        .navbar {
+            background: var(--pure-white);
+            padding: 15px 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            border: 1px solid #E2E8F0;
+        }
+
+        .logo-area img {
+            height: 60px; /* 固定 LOGO 高度，保持精緻 */
+            width: auto;
+            display: block;
+        }
+
+        /* 手機板自動居中 LOGO */
+        @media (max-width: 768px) {
+            .navbar {
+                justify-content: center;
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+
+        /* --- 2. 文案大標題區 --- */
+        .hero-banner {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(rgba(46, 125, 50, 0.03), rgba(46, 125, 50, 0.12)), url('data:image/svg+xml;utf8,<svg xmlns="http://w3.org" viewBox="0 0 100 100"><path d="M10 80 Q 52.5 10, 95 80" stroke="%23A5D6A7" stroke-width="0.5" fill="none"/></svg>');
+            background-size: cover;
+            border-radius: 16px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.01);
+            border: 1px solid rgba(46, 125, 50, 0.08);
+        }
+
+        .hero-banner h1 {
+            font-size: 2.5rem;
+            color: var(--primary-green);
+            font-weight: 800;
+            margin-bottom: 15px;
+            letter-spacing: 2px;
+        }
+
+        .hero-banner p {
+            font-size: 1.3rem;
+            color: #4a5568;
+            font-weight: 500;
+        }
+
+        /* --- 3. CIC 綠色產品鉑金認證榮譽區 --- */
+        .certification-card {
+            background: var(--pure-white);
+            border-left: 6px solid var(--primary-green);
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .cert-info h2 {
+            color: var(--primary-green);
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+        }
+
+        .cert-badge {
+            background: linear-gradient(135deg, #1A365D 0%, #2A4365 100%);
+            color: #E2E8F0;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: bold;
+            text-align: center;
+            border: 2px solid #CBD5E0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .cert-badge span {
+            display: block;
+            color: #FFF;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+        }
+
+        /* --- 4. 網頁版並排 / 手機版垂直之網格系統 --- */
+        .grid-layout {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        @media (min-width: 992px) {
+            .grid-layout {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .content-block {
+            background: var(--pure-white);
+            border-radius: 16px;
+            padding: 25px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+            border: 1px solid #E2E8F0;
+        }
+
+        .block-title {
+            font-size: 1.3rem;
+            color: var(--primary-green);
+            border-bottom: 2px solid var(--eco-light-green);
+            padding-bottom: 12px;
+            margin-bottom: 20px;
+        }
+
+        /* --- 5. 數據表格美化樣式 --- */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            font-size: 0.95rem;
+        }
+
+        .data-table th, .data-table td {
+            padding: 12px 14px;
+            text-align: left;
+            border-bottom: 1px solid #EDF2F7;
+        }
+
+        .data-table th {
+            background-color: var(--eco-light-green);
+            color: var(--primary-green);
+            font-weight: 600;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: #EDF2F7;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            color: #4A5568;
+        }
+
+        /* --- 6. 底部頁尾與商務聯絡欄 --- */
+        .footer-contact {
+            background: #1A202C;
+            color: #E2E8F0;
+            padding: 40px 20px;
+            border-radius: 16px;
+            text-align: center;
+            margin-top: 40px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
+
+        .footer-contact h3 {
+            color: #FFF;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+        }
+
+        .contact-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 25px;
+        }
+
+        .contact-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.05rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .contact-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .btn-whatsapp {
+            background-color: #25D366; /* WhatsApp 官方綠色 */
+            color: white;
+            box-shadow: 0 4px 14px rgba(37, 211, 102, 0.4);
+        }
+
+        .btn-email {
+            background-color: #4A5568;
+            color: white;
+            box-shadow: 0 4px 14px rgba(74, 85, 104, 0.4);
+        }
+
+        .company-copyright {
+            margin-top: 30px;
+            font-size: 0.85rem;
+            color: #718096;
+            border-top: 1px solid #2D3748;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- 1. 頂部商標列 -->
+    <nav class="navbar">
+        <div class="logo-area">
+            <!-- ⚠️ 請將您上傳的 LOGO 圖片命名為 logo.png 並與此網頁放在同一個資料夾 -->
+            <img src="logo.png" alt="創正新型材料有限公司 KITSQUARE ENGINEERING LIMITED">
+        </div>
+    </nav>
+
+    <!-- 2. 文案大標題區 -->
+    <header class="hero-banner">
+        <h1>創正石膏磚</h1>
+        <p>質量優越，引領綠色建造</p>
+    </header>
+
+    <!-- 3. 建造業議會 CIC 綠色產品認證區 -->
+    <section class="certification-card">
+        <div class="cert-info">
+            <h2>建造業議會綠色產品認證 (CIC Green Product Certification)</h2>
+            <p><strong>申請人：</strong>創正新型材料有限公司 | 創正工程有限公司</p>
+            <p><strong>產品類別：</strong>隔牆砌磚 (Block for Internal Partition) | <strong>版本：</strong>Version 2</p>
+            <p><strong>認證型號：</strong>CZ-150 / CZ-100 / CZ-80</p>
+        </div>
+        <div class="cert-badge">
+            CIC GREEN
+            <span>PLATINUM 鉑金評級</span>
+        </div>
+    </section>
+
+    <!-- 4. 核心產品與配套材料數據區 -->
+    <div class="grid-layout">
+        
+        <!-- 左欄：石膏磚核心物理規格表 -->
+        <div class="content-block">
+            <h3 class="block-title">🧱 高密度 (HD) 石膏隔牆磚規格</h3>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>性能項目 \ 型號</th>
+                        <th>CZ-80</th>
+                        <th>CZ-100</th>
+                        <th>CZ-150</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>尺寸 (長×高×厚)</strong></td>
+                        <td>500×500×80 mm</td>
+                        <td>500×500×100 mm</td>
+                        <td>500×250×150 mm</td>
+                    </tr>
+                    <tr>
+                        <td><strong>單塊重量</strong></td>
+                        <td>約 22 kg</td>
+                        <td>約 27.5 kg</td>
+                        <td>約 21 kg</td>
+                    </tr>
+                    <tr>
+                        <td><strong>防火時效 (BS EN 1364)</strong></td>
+                        <td>3 小時 (180min)</td>
+                        <td>4 小時 (240min)</td>
+                        <td>4 小時 (260min)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>隔音性能 (ASTM-E90)</strong></td>
+                        <td><span class="tag">STC 41</span></td>
+                        <td><span class="tag">STC 45</span></td>
+                        <td><span class="tag">STC 50</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>抗壓強度 (BS EN 13279)</strong></td>
+                        <td colspan="3" style="text-align: center; color: var(--primary-green);"><strong>&gt; 15 MPa</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>吸水率 (BS EN 12859)</strong></td>
