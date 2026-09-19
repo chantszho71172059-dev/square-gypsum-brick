@@ -7,6 +7,7 @@
     <style>
         :root {
             --primary-green: #2E7D32;
+            --eco-bg: #f4faf6;
             --pure-white: #FFFFFF;
         }
 
@@ -14,25 +15,28 @@
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Microsoft JhengHei", sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
         }
 
+        /* 網頁環保建築主題背景：精緻的綠色永續建築結構幾何線條 */
         body {
-            background-color: #f4faf6;
+            background-color: var(--eco-bg);
             background-image: 
-                radial-gradient(at 0% 0%, rgba(46, 125, 50, 0.05) 0px, transparent 50%),
-                radial-gradient(at 100% 0%, rgba(165, 214, 167, 0.1) 0px, transparent 50%),
-                linear-gradient(135deg, rgba(232, 245, 233, 0.4) 0%, rgba(200, 230, 201, 0.2) 100%);
+                linear-gradient(rgba(46, 125, 50, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(46, 125, 50, 0.03) 1px, transparent 1px),
+                radial-gradient(circle at 100% 0%, rgba(165, 214, 167, 0.15) 0%, transparent 60%);
+            background-size: 40px 40px, 40px 40px, 100% 100%;
             background-attachment: fixed;
             color: #2D3748;
             padding: 20px 10px;
         }
 
         .container {
-            max-width: 1000px;
+            max-width: 900px;
             margin: 0 auto;
         }
 
+        /* 1. 頂部公司 LOGO 區 */
         .header-logo {
             background: var(--pure-white);
             padding: 20px;
@@ -52,14 +56,14 @@
             display: block;
         }
 
+        /* 文案大標題 */
         .title-banner {
             text-align: center;
-            margin-bottom: 30px;
-            padding: 10px;
+            margin-bottom: 35px;
         }
 
         .title-banner h1 {
-            font-size: 2.2rem;
+            font-size: 2.3rem;
             color: var(--primary-green);
             font-weight: 800;
             letter-spacing: 2px;
@@ -67,16 +71,17 @@
         }
 
         .title-banner p {
-            font-size: 1.2rem;
+            font-size: 1.25rem;
             color: #4A5568;
             font-weight: 500;
         }
 
+        /* 2. 核心圖片展示區 */
         .image-gallery {
             display: flex;
             flex-direction: column;
-            gap: 25px;
-            margin-bottom: 40px;
+            gap: 30px;
+            margin-bottom: 50px;
         }
 
         .image-card {
@@ -94,6 +99,7 @@
             border-radius: 8px;
         }
 
+        /* 3. 最下方聯繫方式與電郵 */
         .footer-contact {
             background: #1A202C;
             color: #E2E8F0;
@@ -101,14 +107,12 @@
             border-radius: 16px;
             text-align: center;
             box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-            margin-top: 20px;
         }
 
         .footer-contact h3 {
             color: #FFF;
             margin-bottom: 15px;
             font-size: 1.5rem;
-            letter-spacing: 1px;
         }
 
         .contact-box {
@@ -128,7 +132,7 @@
             text-decoration: none;
             font-weight: bold;
             font-size: 1.05rem;
-            transition: transform 0.2s, box-shadow 0.2s;
+            transition: transform 0.2s;
         }
 
         .contact-btn:hover {
@@ -138,13 +142,13 @@
         .btn-whatsapp {
             background-color: #25D366;
             color: white;
-            box-shadow: 0 4px 14px rgba(37, 211, 102, 0.4);
+            box-shadow: 0 4px 14px rgba(37, 211, 102, 0.3);
         }
 
         .btn-email {
             background-color: #4A5568;
             color: white;
-            box-shadow: 0 4px 14px rgba(74, 85, 104, 0.4);
+            box-shadow: 0 4px 14px rgba(74, 85, 104, 0.3);
         }
 
         .copyright {
@@ -162,7 +166,7 @@
 
     <!-- 頂部公司 LOGO -->
     <header class="header-logo">
-        <img src="logo.png" alt="創正新型材料有限公司">
+        <img src="logo.png?v=2026" alt="創正新型材料有限公司">
     </header>
 
     <!-- 文案標題 -->
@@ -171,22 +175,22 @@
         <p>質量優越，引領綠色建造</p>
     </div>
 
-     <!-- 中間：5張圖片垂直順序排列（完全對應現有的 .jpg.jpeg 實際副檔名） -->
+    <!-- 中間：5張圖片垂直順序排列（加上版本號強迫繞過快取） -->
     <main class="image-gallery">
         <div class="image-card">
-            <img src="image5.jpg.jpeg" alt="建造業議會 CIC 綠色產品認證 鉑金評級">
+            <img src="image5.jpg.jpeg?v=2026" alt="建造業議會 CIC 綠色產品認證 鉑金評級">
         </div>
         <div class="image-card">
-            <img src="image1.jpg.jpeg" alt="石膏磚產品型號與尺寸規格">
+            <img src="image1.jpg.jpeg?v=2026" alt="石膏磚產品型號與尺寸規格">
         </div>
         <div class="image-card">
-            <img src="image4.jpg.jpeg" alt="BS 5234 英國標準結構強度檢驗表">
+            <img src="image4.jpg.jpeg?v=2026" alt="BS 5234 英國標準結構強度檢驗表">
         </div>
         <div class="image-card">
-            <img src="image3.jpg.jpeg" alt="專用配套輔料施工參數說明">
+            <img src="image3.jpg.jpeg?v=2026" alt="專用配套輔料施工參數說明">
         </div>
         <div class="image-card">
-            <img src="image2.jpg.jpeg" alt="創正石膏黏接劑與膩子規格對比">
+            <img src="image2.jpg.jpeg?v=2026" alt="創正石膏黏接劑與膩子規格對比">
         </div>
     </main>
 
@@ -213,3 +217,4 @@
 
 </body>
 </html>
+
